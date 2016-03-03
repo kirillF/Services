@@ -28,6 +28,8 @@ public class StartActivity extends Activity implements View.OnClickListener {
             "TableLayout",
             "GridLayout",
             "",
+            "ListView ArrayAdapter",
+            "ListView BaseAdapter",
             "SendMessage",
             "",
             "Treads"
@@ -69,6 +71,16 @@ public class StartActivity extends Activity implements View.OnClickListener {
                 break;
             case "Treads": {
                 Intent intent = new Intent(this, ThreadActivity.class);
+                startActivity(intent);
+                break;
+            }
+            case "ListView ArrayAdapter": {
+                Intent intent = new Intent(this, ListViewArrayAdapterActivity.class);
+                startActivity(intent);
+                break;
+            }
+            case "ListView BaseAdapter": {
+                Intent intent = new Intent(this, ListViewBaseAdapterActivity.class);
                 startActivity(intent);
                 break;
             }
