@@ -3,6 +3,7 @@ package ru.mail.park.advandroid.helloword.lection2;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -63,36 +64,37 @@ public class StartActivity extends Activity implements View.OnClickListener {
             case "":
                 break;
             case "SendMessage":
-                // Explicit intent
+                // Implicit intent
                 Intent sendIntent = new Intent(Intent.ACTION_VIEW);
-                String title = getResources().getString(R.string.chooser_title);
-                Intent chooser = Intent.createChooser(sendIntent, title);
-                if (sendIntent.resolveActivity(getPackageManager()) != null) {
-                    startActivity(chooser);
-                }
+                sendIntent.setData(Uri.parse("http://mail.ru"));
+                startActivity(sendIntent);
                 break;
             case "Treads": {
+                // Explicit intent
                 Intent intent = new Intent(this, ThreadActivity.class);
                 startActivity(intent);
                 break;
             }
             case "ListView ArrayAdapter": {
+                // Explicit intent
                 Intent intent = new Intent(this, ListViewArrayAdapterActivity.class);
                 startActivity(intent);
                 break;
             }
             case "ListView BaseAdapter": {
+                // Explicit intent
                 Intent intent = new Intent(this, ListViewBaseAdapterActivity.class);
                 startActivity(intent);
                 break;
             }
             case "Widgets": {
+                // Explicit intent
                 Intent intent = new Intent(this, UIElements.class);
                 startActivity(intent);
                 break;
             }
             default: {
-                // Implicit intent
+                // Explicit intent
                 Intent intent = new Intent(this, LayoutActivity.class);
                 Log.d("StartActivity", "Start " + str + " " + buttons.indexOf(str) + " " + layouts[buttons.indexOf(str)]);
                 intent.putExtra("activity_type", layouts[buttons.indexOf(str)]);
