@@ -32,6 +32,10 @@
             android:label="@string/threads_label" />
         <activity android:name=".UIElements" />
 
+        <activity android:name=".RecyclerActivity" />
+        
+        <activity android:name=".ServiceActivity" />
+
         <activity android:name=".WebViewActivity">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
@@ -40,6 +44,10 @@
                 <category android:name="android.intent.category.BROWSABLE" />
             </intent-filter>
         </activity>
+
+        <service android:name=".CommandService" />
+        <service android:name=".TestService" />
+
     </application>
 
 </manifest>

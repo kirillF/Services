@@ -31,8 +31,10 @@ public class StartActivity extends Activity implements View.OnClickListener {
             "",
             "ListView ArrayAdapter",
             "ListView BaseAdapter",
+            "Recycler View",
             "Widgets",
             "",
+            "ServiceActivity",
             "SendMessage",
             "",
             "Treads"
@@ -84,6 +86,16 @@ public class StartActivity extends Activity implements View.OnClickListener {
             case "ListView BaseAdapter": {
                 // Explicit intent
                 Intent intent = new Intent(this, ListViewBaseAdapterActivity.class);
+                startActivity(intent);
+                break;
+            }
+            case "Recycler View": {
+                Intent intent = new Intent(this, RecyclerActivity.class);
+                startActivity(intent);
+                break;
+            }
+            case "ServiceActivity": {
+                Intent intent = new Intent(this, ServiceActivity.class);
                 startActivity(intent);
                 break;
             }
