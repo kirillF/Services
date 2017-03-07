@@ -16,7 +16,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Text View"
+                android:text="@string/default_text"
                 android:id="@+id/textView"
                 android:textSize="14pt"
                 android:layout_gravity="center_horizontal"
@@ -46,7 +46,7 @@
                 android:layout_weight="0.11"/>
 
             <ProgressBar
-                style="?android:attr/progressBarStyleHorizontal"
+                style="?android:attr/progressBarStyleLarge"
                 android:layout_width="228dp"
                 android:layout_height="wrap_content"
                 android:id="@+id/progressBar"

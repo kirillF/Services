@@ -28,6 +28,7 @@ public class StartActivity extends Activity implements View.OnClickListener {
             "RelativeLayout",
             "TableLayout",
             "GridLayout",
+            "FragmentActivity",
             "",
             "ListView ArrayAdapter",
             "ListView BaseAdapter",
@@ -102,6 +103,11 @@ public class StartActivity extends Activity implements View.OnClickListener {
             case "Widgets": {
                 // Explicit intent
                 Intent intent = new Intent(this, UIElements.class);
+                startActivity(intent);
+                break;
+            }
+            case "FragmentActivity": {
+                Intent intent = new Intent(this, FragmentActivity.class);
                 startActivity(intent);
                 break;
             }

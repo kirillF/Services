@@ -42,4 +42,9 @@ public class SimpleRecyclerAdapter extends RecyclerView.Adapter<SimpleViewHolder
 	public int getItemCount() {
 		return sItems.length;
 	}
+
+	@Override
+	public int getItemViewType(int position) {
+		return super.getItemViewType(position);
+	}
 }
