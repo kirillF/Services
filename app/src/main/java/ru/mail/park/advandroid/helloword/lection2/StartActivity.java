@@ -38,7 +38,8 @@ public class StartActivity extends Activity implements View.OnClickListener {
             "ServiceActivity",
             "SendMessage",
             "",
-            "Treads"
+            "Treads",
+            "Loader"
     );
 
     private static final int layouts[] = {
@@ -75,6 +76,12 @@ public class StartActivity extends Activity implements View.OnClickListener {
             case "Treads": {
                 // Explicit intent
                 Intent intent = new Intent(this, ThreadActivity.class);
+                startActivity(intent);
+                break;
+            }
+            case "Loader": {
+                // Explicit intent
+                Intent intent = new Intent(this, LoaderActivity.class);
                 startActivity(intent);
                 break;
             }

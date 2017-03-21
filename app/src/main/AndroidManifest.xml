@@ -33,7 +33,8 @@
         <activity android:name=".UIElements" />
 
         <activity android:name=".RecyclerActivity" />
-        
+        <activity android:name=".LoaderActivity"/>
+
         <activity android:name=".ServiceActivity" />
         <activity android:name="FragmentActivity" />
         <activity android:name=".WebViewActivity">

@@ -6,6 +6,7 @@
     <string name="threads_label">Treads Samples</string>
     <string name="show_dialog">Show Dialog</string>
     <string name="default_text">Text View</string>
+    <string name="hello_world">Hello from Loader!</string>
     <string-array name="names">
         <item>Аврора</item>
         <item>Агата, Агафья</item>
