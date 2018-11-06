@@ -1,5 +1,5 @@
 // ITestService.aidl
-package ru.mail.park.advandroid.helloword.lection2;
+package ru.mail.technotrack.services;
 
 
 interface ITestService {

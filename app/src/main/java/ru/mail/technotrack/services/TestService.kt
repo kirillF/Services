@@ -1,9 +1,11 @@
-package ru.mail.park.advandroid.helloword.lection2
+package ru.mail.technotrack.services
 
 import android.app.Service
 import android.content.Intent
 import android.os.IBinder
 import android.os.RemoteException
+import ru.mail.technotrack.services.lection2.ICallback
+import ru.mail.technotrack.services.lection2.ITestService
 
 import java.util.concurrent.TimeUnit
 

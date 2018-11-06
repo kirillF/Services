@@ -1,4 +1,4 @@
-package ru.mail.park.advandroid.helloword.lection2;
+package ru.mail.technotrack.services.lection2;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;

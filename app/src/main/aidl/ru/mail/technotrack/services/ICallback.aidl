@@ -1,5 +1,5 @@
 // ICallback.aidl
-package ru.mail.park.advandroid.helloword.lection2;
+package ru.mail.technotrack.services;
 
 // Declare any non-default types here with import statements
 
