@@ -25,7 +25,7 @@ class TestService : Service() {
         }
 
         override fun getStringAsync() {
-            sendString("Hello from Service!")
+            sendString("Hello from Service async!")
         }
 
         fun sendString(data: String) {
@@ -50,6 +50,6 @@ class TestService : Service() {
     }
 
     fun sayHello(): String {
-        return "Hello from Service!"
+        return "Hello from Service sync!"
     }
 }

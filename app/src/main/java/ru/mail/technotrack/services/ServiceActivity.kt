@@ -22,6 +22,7 @@ class ServiceActivity : AppCompatActivity() {
                 mTestService!!.bindActivity(mServiceCallback)
                 mTestService!!.getStringAsync()
                 connect.text = "Connected"
+                textView.text = mTestService!!.string
             } catch (e: RemoteException) {
                 textView.text = "Service connection error"
                 Log.e("ServiceActivity", "Can not get string from service", e)
