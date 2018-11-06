@@ -10,9 +10,6 @@ import android.os.RemoteException
 import android.support.v7.app.AppCompatActivity
 import android.util.Log
 import kotlinx.android.synthetic.main.service_activity.*
-import ru.mail.technotrack.services.lection2.ICallback
-import ru.mail.technotrack.services.lection2.ITestService
-import ru.mail.technotrack.services.lection2.R
 
 class ServiceActivity : AppCompatActivity() {
 
